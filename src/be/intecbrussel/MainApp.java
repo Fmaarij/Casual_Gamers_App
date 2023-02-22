@@ -9,7 +9,7 @@ public class MainApp {
         System.out.println("******** Chose your game to play or type 0 to quite ******** ");
         System.out.println("******** Type 1 for BattleShip ******** ");
         System.out.println("******** Type 2 for Hangman ******** ");
-        System.out.println("******** Type 3 for Tic Toe ******** ");
+        System.out.println("******** Type 3 for Tic Tac Toe ******** ");
 
         int userInput = myScanner.nextInt();
 
@@ -21,7 +21,7 @@ public class MainApp {
                 System.out.println();
                 System.out.println("******** Type 1 to play again or 0 to quite ******** ");
                 System.out.println("******** Type 2 to play Hangman ******** ");
-                System.out.println("******** Type 3 to play Tic Toe ******** ");
+                System.out.println("******** Type 3 to play Tic Tac Toe ******** ");
                 userInput = myScanner.nextInt();
             } else if (userInput == 2) {//game 2 Hangman
                 HangMan hangManGame = new HangMan();
@@ -29,7 +29,7 @@ public class MainApp {
                 System.out.println();
                 System.out.println("******** Type 2 to play again or 0 to quite ******** ");
                 System.out.println("******** Type 1 to play BattleShip ******** ");
-                System.out.println("******** Type 3 to play Tic Toe ******** ");
+                System.out.println("******** Type 3 to play Tic Tac Toe ******** ");
                 userInput = myScanner.nextInt();
             } else if (userInput == 3) {//game 3 Tic toe
                 Tictac ticTacGame = new Tictac();
@@ -45,6 +45,6 @@ public class MainApp {
             }
 
         }
-        System.out.println("********  Good BYE ******** ");
+        System.out.println("******** Good BYE ******** ");
     }
 }
