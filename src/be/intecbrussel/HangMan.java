@@ -30,7 +30,7 @@ static int counterHangman = 0;
 
         // getting a random word from the words array and changing them to capital letters
         word = words.get((int) (Math.random() * words.size())).toUpperCase();
-        //System.out.println(word);
+        System.out.println(word);
         dash = new String(new char[word.length()]).replace("\0", "-");
 
         //calling the scanner object to get user input
@@ -47,9 +47,8 @@ static int counterHangman = 0;
             String userInput = myScanner.next().toUpperCase();
             //Checking if the input is a digit
             if (userInput.length() != 1 || Character.isDigit(userInput.charAt(0))) {
-                System.out.println("Integer or more than 1 letter is not allowed");
+                System.out.println("Symbol,integer or more than 1 letter is not allowed");
                 continue;
-                //userInput = myScanner.next().toUpperCase();
             }
             hang(userInput);
             drawHangman();
@@ -87,6 +86,12 @@ static int counterHangman = 0;
 
         } else {
             dash = newDash.toString();
+
+            //re-check this part
+            if(lives > 0){
+                System.out.println("******** Great,you are going good ********");
+            }
+
         }
         if (dash.equals(word)) {
             System.out.println("******** Correct! You won! The word was " + word + " ********");
