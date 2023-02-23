@@ -5,7 +5,11 @@ import java.util.Scanner;
 public class MainApp {
     public static void main(String[] args) throws Exception {
         Scanner myScanner = new Scanner(System.in);
-
+        System.out.println("********                      ******** ");
+        System.out.println("*                                    * ");
+        System.out.println("*        CASUAL GAMERS UNITE         * ");
+        System.out.println("*                                    * ");
+        System.out.println("********                      ******** ");
         System.out.println("******** Chose your game to play or type 0 to quite ******** ");
         System.out.println("******** Type 1 for BattleShip ******** ");
         System.out.println("******** Type 2 for Hangman ******** ");
