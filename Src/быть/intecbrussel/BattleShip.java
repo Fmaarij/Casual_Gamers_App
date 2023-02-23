@@ -21,11 +21,11 @@ public class BattleShip {
         placeShips(playerName1, battleField1);
         placeShips(playerName2, battleField2);
         while (!IsWinCondition()) {
-            makeTurn(playerName1, monitor1, battleField1);
+            makeTurn(playerName1, monitor1, battleField2);
             if (IsWinCondition()) {
                 break;
             }
-            makeTurn(playerName2, monitor2, battleField2);
+            makeTurn(playerName2, monitor2, battleField1);
             if (IsWinCondition()) {
                 break;
             }
