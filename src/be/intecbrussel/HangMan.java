@@ -30,7 +30,7 @@ static int counterHangman = 0;
 
         // getting a random word from the words array and changing them to capital letters
         word = words.get((int) (Math.random() * words.size())).toUpperCase();
-        System.out.println(word);
+        //System.out.println(word);
         dash = new String(new char[word.length()]).replace("\0", "-");
 
         //calling the scanner object to get user input
